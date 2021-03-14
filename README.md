@@ -1,5 +1,5 @@
-AVR Module Makefile Template
-============================
+AVR Modular Makefile Template
+=============================
 
 This is a collection of makefiles for building AVR microcontroller
 projects using the GNU toolchain (avr-gcc). Makefile targets are also
