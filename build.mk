@@ -74,7 +74,7 @@ $(TRG): $(OBJS)
 
 # hex file from ELF output
 %.hex: %.elf
-	$(OBJCOPY) -j .text -j .data -O $(HEX_FMT) $< $@
+	$(OBJCOPY) -j .text -j .data -j .rodata -O $(HEX_FMT) $< $@
 
 %.ee.hex: %.elf
 	$(OBJCOPY) -j eeprom --change-section-lma .eeprom=0 -O $(HEX_FMT) $< $@
